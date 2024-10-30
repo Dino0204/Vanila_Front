@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Image Cropper</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
+    <link href="cropper.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="Cropper">
+        <div class="container"> 
+            <img id="originImage" src="/img/picture.png" alt="OriginImage">
+        </div>
+
+        <div>
+            <img id="profileImage" src="/img/profile.png" alt="ProfileImage">
+            <button id="crop-button">프로필로 설정하기</button>
+        </div>
+    </div>  
+    <div>
+        <input id="imageUpload" type="file" accept="image/*">
+    </div>
+    
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js" integrity="sha512-JyCZjCOZoyeQZSd5+YEAcFgz2fowJ1F1hyJOXgtKu4llIa0KneLcidn5bwfutiehUTiOuK87A986BZJMko0eWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="cropper.js"></script>
+</html>

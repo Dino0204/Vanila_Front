@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/image/search.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Google - Home</title>
+  </head>
+  <body>
+    <h1 id="title">Google</h1>
+    <!--검색 버튼-->
+    <div>
+      <input id="search" type="text" placeholder="Google 검색 또는 URL 입력" />
+    </div>
+
+    <!--바로가기 버튼 => 팝업창이 열림-->
+    <div class="SrtAligin1">
+      <input id="shortcutPlus" type="button" value="+" autocomplete="false" />
+      <p id="srtText">바로가기 추가</p>
+    </div>
+
+    <!--바로가기 리스트 , value에 이름의 첫번째값을 넣음, Href에 URL을 넣음, 아래에 이름을 추가-->
+    <div class="SrtAligin2"></div>
+
+    <!--바로가기 팝업창-->
+    <div id="popup">
+      <p style="font-size: 13px">바로가기 추가</p>
+
+      <span id="fontSize"><p>이름</p></span>
+      <input
+        id="srtInputN"
+        type="text"
+        placeholder="Name입력"
+        autocomplete="off"
+      />
+
+      <span id="fontSize"><p>URL</p></span>
+      <input id="srtInputU" type="text" placeholder="URL입력" />
+
+      <button id="popupbtn" onclick="completePopup()">완료</button>
+      <button id="popupbtn" onclick="closePopup()">취소</button>
+    </div>
+
+    <script src="/js/popup.js"></script>
+  </body>
+</html>

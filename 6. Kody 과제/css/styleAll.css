@@ -1,0 +1,12 @@
+input{
+    border-radius: 30px;
+    border: none;
+    background-color: blanchedalmond;
+}   
+a {
+    text-decoration-line: none;
+    color: black;
+    font: inherit;
+    font-size: 21px;
+}
+

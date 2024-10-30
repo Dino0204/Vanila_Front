@@ -1,0 +1,15 @@
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    color: black;
+    border-radius: 50%; 
+    background-color: red;
+    box-shadow: 3px 3px 3px gray;
+    float: left;
+    transition-duration: 0.2s;
+}
+
+button:active{
+    box-shadow: none;
+}

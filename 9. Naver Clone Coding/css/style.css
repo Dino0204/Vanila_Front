@@ -1,0 +1,185 @@
+#logo {
+    width: 155px;
+    height: 30px;
+    margin: auto;
+}
+
+.wrap-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wrap-article{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#lang-lg {
+    justify-content: flex-start;
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../img/data.png');
+    background-position: -54px -83px;
+    background-size: 140px 109px;
+}
+
+.cont-select {
+    position: relative;
+    width: 200px;
+}
+
+.btn-select {
+    width: 100%;
+    padding: 13px 30px 13px 14px;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #fff;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+
+    /* 말줄임 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.btn-select:hover,.btn-select:focus {
+    border: 1px solid #2DB400;
+    outline: 3px solid #2db400bf;
+}
+
+.list-member {
+    list-style-type : none;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    padding: 0;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.btn-select.on+.list-member {
+    display: block;
+}
+
+.list-member li {
+    width: 100%;
+    height: 40px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+}
+
+.list-member li button {
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+
+    /* 말줄임 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.list-member li button:hover,.list-member li button:focus {
+    background-color: #F8E4FF;
+}
+
+nav{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+#loginForm{
+    align-items: center;
+    text-align: center;
+}
+
+#wrap-name,#wrap-password{
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#wrap-name{
+    margin-bottom: 0px;
+}
+
+#wrap-password{
+    margin-top: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#name,#password{ 
+    border: none;
+    padding: 10px 2px;
+    padding-left: 15px;
+    font-size: large;
+    width: 100%;
+}
+
+.wrap-login {
+    border:2px solid #2DB400;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+
+#name-lb,#password-lb{
+    margin-right:10px;
+    width: 30px;
+    height: 30px;
+
+    background-image: url('../img/login.png');
+    background-size: 238px 225px;
+}
+
+#name-lb{
+    background-position: 0 -146px;
+}
+
+#password-lb{
+    background-position: -128px -146px;
+}
+
+#Signin{
+    margin-top:14px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #09aa5c;
+    border: none;
+    border-radius: 6px;
+}
+
+@media screen and (min-width:800px) {
+    #loginForm {
+        margin: 0px 20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #loginForm {
+        margin: 0px 10%;
+    }
+}
